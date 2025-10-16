@@ -1,3 +1,1 @@
 Flask==2.3.3
-gunicorm == 21.2.0
-werkzeug == 2.3.7
