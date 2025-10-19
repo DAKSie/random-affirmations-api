@@ -34,12 +34,12 @@ AFFIRMATIONS = [
 
 def get_random_affirmation():
     affirmation_text = random.choice(AFFIRMATIONS)
-    return affirmation_text  # Return just the string, not a dictionary
+    return affirmation_text
 
 @app.route("/get-affirmations")
 def get_affirmation():
-    affirmation_text = get_random_affirmation()  # CALL the function with ()
-    affirmations = { "affirmation": affirmation_text }  # Create the dictionary here
+    affirmation_text = get_random_affirmation()
+    affirmations = { "affirmation": affirmation_text }
     return jsonify(affirmations), 200
 
 if __name__ == "__main__":
